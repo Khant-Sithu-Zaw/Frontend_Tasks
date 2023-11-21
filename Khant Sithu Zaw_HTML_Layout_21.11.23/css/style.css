@@ -1,9 +1,111 @@
-.personTable{
-    width: 60%;
+@font-face {
+  font-family: Notosan_bold;
+  src: url('../font/NotoSans-Bold.ttf');
 }
+
+@font-face {
+  font-family: Notosan_bolditalic;
+  src: url('../font/NotoSans-BoldItalic.ttf');
+}
+
+@font-face {
+  font-family: Notosan_italic;
+  src: url('../font/NotoSans-Italic.ttf');
+}
+
+body {
+  background-color: #ccc;
+}
+
+img {
+  width: 100%;
+}
+
+.headingtxt {
+  font-family: Notosan_bold;
+  text-decoration: underline;
+  letter-spacing: 1.5px;
+  margin: 10px 0;
+}
+
+h1.headingtxt {
+  font-size: 32px;
+}
+
+h2.headingtxt {
+  font-size: 24px;
+}
+
+h3.headingtxt {
+  font-size: 18px;
+}
+
+h4.headingtxt {
+  font-size: 16px;
+}
+
+h5.headingtxt {
+  font-size: 13px;
+}
+
+h6.headingtxt {
+  font-size: 10px;
+}
+
+p.info {
+  text-align: right;
+  max-width: 1000px;
+  padding: 30px;
+  border: 1px solid #ff3300;
+  font-size: 20px;
+  line-height: 1.3;
+  font-family: Notosan_bolditalic;
+  background: url('../img/paper.gif') repeat center/contain;
+}
+
+.mainImage {
+  margin: 10px auto;
+  max-width: 900px;
+}
+
+.gifImage {
+  width: 50%;
+}
+
+a {
+  color: #001a33;
+  text-transform: uppercase;
+  text-decoration: line-through;
+}
+
+.w3school {
+  font-size: 21px;
+}
+
+ul,
+ol {
+  font-size: 20px;
+  font-family: Notosan_italic;
+  margin: 0 5px;
+}
+
+.lists li {
+  display: inline-block;
+  padding: 10px;
+}
+
+dl {
+  font-size: 22px;
+}
+
+.personTable {
+  width: 60%;
+}
+
 .personTable,
 .personTable th,
 .personTable td {
-    border: 1px solid black;
+  border: 1px solid #000;
   border-collapse: collapse;
+  text-align: center;
 }

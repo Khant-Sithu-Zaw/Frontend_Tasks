@@ -6,28 +6,34 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Assignment 1_HTML layout</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/reset.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
     <!-- <script src='main.js'></script> -->
 </head>
 
 <body>
-    <h1 id="firstText">This is a heading level1 with default 32px font size.</h1>
-    <h2>This is a heading level2 with default 24px font size.</h2>
-    <h3>This is a heading level3 with default 18.72px font size.</h3>
-    <h4>This is a heading level4 with default 16 px font size.</h4>
-    <h5>This is a heading level5 with default 13.28px font size.</h5>
-    <h6>This is a heading level6 with default 10.72px font size.</h6>
-    <p>
+    <h1 id="firstText" class="headingtxt">This is a heading level1 with default 32px font size.</h1>
+    <h2 class="headingtxt">This is a heading level2 with default 24px font size.</h2>
+    <h3 class="headingtxt">This is a heading level3 with default 18.72px font size.</h3>
+    <h4 class="headingtxt">This is a heading level4 with default 16 px font size.</h4>
+    <h5 class="headingtxt">This is a heading level5 with default 13.28px font size.</h5>
+    <h6 class="headingtxt">This is a heading level6 with default 10.72px font size.</h6>
+    <p class="info">
         All headings font weight are bold and block-level element.
         img tag without setting width and height will cause the website to display its original size.Anchor tags without
         target will load on its own page.
     </p>
-    <img src="img/Screenshot (40).png" alt="shogun" width="100%">
-    <img src="img/tenor.gif" alt="memes">
-    <h3>You will learn more about HTML at <a href="https://www.w3schools.com/html/" target="_blank">W3 schools</a></h3>
+    <div class="mainImage">
+        <img src="img/Screenshot (40).png" alt="shogun">
+    </div>
+    <div class="gifImage">
+        <img src="img/tenor.gif" alt="memes">
+    </div>
+    <h3 class="w3school">You will learn more about HTML at <a href="https://www.w3schools.com/html/" target="_blank">W3
+            schools</a></h3>
     <a href="#firstText">Click me to go back to top and see heading 1.</a>
     <h4>Now let's try ordered list with default rendering.</h4>
-    <ol>
+    <ol class="lists">
         <li>Chocolate</li>
         <li>Milk</li>
         <li>Tea</li>
@@ -36,7 +42,7 @@
     <ul>
         <li>
             Drinks
-            <ul>
+            <ul class="lists">
                 <li>Coffee</li>
                 <li>Water</li>
                 <li>Beer</li>
