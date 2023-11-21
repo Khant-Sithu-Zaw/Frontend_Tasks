@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Assignment 1_HTML form layout</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <!-- <script src='main.js'></script> -->
+</head>
+
+<body>
+    <h2>HTML Forms</h2>
+    <form action="/" method="">
+        <label for="fname">First name:</label><br>
+        <input type="text" name="fname" placeholder="Enter First Name"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" name="lname" placeholder="Enter Last Name"><br>
+        <label for="fname">Select Gender</label>
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female
+        <br>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label><br>
+        <label for="cars">Choose a car:</label><br>
+        <select name="cars" size="5" multiple>
+            <optgroup label="foreign cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </optgroup>
+            <optgroup label="local cars">
+                <option value="honda">Honda</option>
+                <option value="colt">Colt</option>
+                <option value="probox">Probox</option>
+                <option value="passo">Passo</option>
+            </optgroup>
+        </select><br>
+        <label>Comment below</label><br>
+        <textarea name="cmts" rows="10" cols="30" placeholder="Leave a comment..."></textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

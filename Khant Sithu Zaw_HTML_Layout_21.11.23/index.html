@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Assignment 1_HTML layout</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <!-- <script src='main.js'></script> -->
+</head>
+
+<body>
+    <h1 id="firstText">This is a heading level1 with default 32px font size.</h1>
+    <h2>This is a heading level2 with default 24px font size.</h2>
+    <h3>This is a heading level3 with default 18.72px font size.</h3>
+    <h4>This is a heading level4 with default 16 px font size.</h4>
+    <h5>This is a heading level5 with default 13.28px font size.</h5>
+    <h6>This is a heading level6 with default 10.72px font size.</h6>
+    <p>
+        All headings font weight are bold and block-level element.
+        img tag without setting width and height will cause the website to display its original size.Anchor tags without
+        target will load on its own page.
+    </p>
+    <img src="img/Screenshot (40).png" alt="shogun" width="100%">
+    <img src="img/tenor.gif" alt="memes">
+    <h3>You will learn more about HTML at <a href="https://www.w3schools.com/html/" target="_blank">W3 schools</a></h3>
+    <a href="#firstText">Click me to go back to top and see heading 1.</a>
+    <h4>Now let's try ordered list with default rendering.</h4>
+    <ol>
+        <li>Chocolate</li>
+        <li>Milk</li>
+        <li>Tea</li>
+    </ol>
+    <h4>Now let's try nested unordered list with default rendering.</h4>
+    <ul>
+        <li>
+            Drinks
+            <ul>
+                <li>Coffee</li>
+                <li>Water</li>
+                <li>Beer</li>
+                <li>Wine</li>
+            </ul>
+        </li>
+        <li>Food</li>
+        <li>Dessert</li>
+    </ul>
+    <dl>
+        <dt>Description List</dt>
+        <dd>It contains two tags i.e dd and dt.</dd>
+        <dt>Table tag</dt>
+        <dd>- see below in default style</dd>
+    </dl>
+    <table>
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+        </tr>
+        <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Yoshi Tannamuri</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+        </tr>
+    </table>
+    <h4>Pure Table with colspan</h4>
+    <table class="personTable">
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+    <h4>Pure Table with rowspan</h4>
+    <table class="personTable">
+        <tr>
+            <th>Name</th>
+            <td>Jill</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Phone</th>
+            <td>555-1234</td>
+        </tr>
+        <tr>
+            <td>555-8745</td>
+        </tr>
+    </table><br>
+    <video controls muted preload="none">
+        <source type="video/mp4" src="" />
+    </video>
+    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+    </iframe>
+    <audio controls muted>
+        <source src="" type="audio/ogg">
+    </audio>
+</body>
+
+</html>
