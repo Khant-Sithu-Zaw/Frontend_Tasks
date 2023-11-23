@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #d0021b;
+}
+
+.blk {
+  padding: 20px 0;
+}
+
+.txt {
+  color: #ffffff;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+.navi {
+  margin: 10px 0;
+  background-color: #f5a623;
+}
+
+.section {
+  float: left;
+  width: 59%;
+  padding: 34px 10px 12px;
+  background-color: #4ca884;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+}
+
+.section p {
+  margin-top: 10px;
+  padding: 15px 0;
+  background-color: #7ed321;
+}
+
+.aside {
+  float: right;
+  width: 40%;
+  padding: 90px 0;
+  background-color: #4a90e2;
+}
+
+.footer {
+  margin-top: 10px;
+  background-color: #9b9b9b;
+}
