@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1.6px;
+}
+
+.header {
+  padding: 12px 10px;
+  background-color: #f5f5f5;
+}
+
+/*.blk {
+  border: 2px solid #000000;
+}*/
+
+.header .navi {
+  margin-top: 10px;
+  padding: 10px 0;
+}
+
+.navi {
+  background-color: #d8e9f9;
+}
+
+.sec-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.sec-content .sec-blk {
+  padding: 10px 8px 15px;
+}
+
+.sec-content .sec-lft {
+  width: 70%;
+  background-color: #d5e8d5;
+}
+
+.sec-content .head-txt {
+  margin: 10px 0;
+  padding: 12px 0;
+  background-color: #f5f5f3;
+}
+
+.sec-content .article {
+  padding: 8px;
+  background-color: #f7cecc;
+}
+
+.sec-txt {
+  background-color: #e2d5e7;
+}
+
+.sec-content .article .paragraph {
+  padding: 40px 0;
+}
+
+.sec-content .article .sec-content p {
+  width: 50%;
+}
+
+.sec-content .article .sec-content * {
+  padding: 65px 0;
+}
+
+.sec-content .article .sec-content .aside {
+  width: 49%;
+  background-color: #fff2cd;
+}
+
+.footer {
+  background-color: #cdeb8b;
+}
+
+.sec-content .article .footer {
+  padding: 16px 0;
+}
+
+.header,
+.navi,
+.sec-lft,
+.article,
+.sec-rht,
+.head-txt,
+.sec-txt,
+.aside,
+.footer {
+  border: 2px solid #000000;
+}
+
+.sec-content .sec-rht {
+  width: 29.2%;
+  background-color: #ffe3cd;
+  border-color: #ecbf4a;
+}
+
+.sec-content .sec-rht .navi {
+  padding: 212px 0;
+  border-color: #8c98a8;
+}
+
+div.footer {
+  padding: 25px 0;
+}
