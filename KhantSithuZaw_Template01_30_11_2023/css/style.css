@@ -1,0 +1,382 @@
+@charset "utf-8";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #ffffff;
+  font-family: 'Times New Roman', serif;
+  letter-spacing: 0;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+}
+
+.main-visual {
+  padding: 48px 0 53px;
+  background-color: #2F2F2F;
+  border-top: 16px solid #0795FD;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 970px;
+}
+
+header h1 {
+  float: left;
+  margin-top: 10px;
+  max-width: 196px;
+}
+
+header nav {
+  float: right;
+  padding-right: 2px;
+  font-family: Georgia, serif;
+  font-size: 13px;
+}
+
+header nav li {
+  float: left;
+  text-transform: uppercase;
+}
+
+header nav li a {
+  width: 100px;
+  padding: 17px 0;
+  text-align: center;
+  border-radius: 10px;
+}
+
+header nav li a:hover {
+  background-color: #0795FD;
+}
+
+.banner {
+  position: relative;
+  margin: 102px 102px 0 0;
+}
+
+
+.banner::before,
+.banner::after {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 60px;
+  content: "";
+  transform: translateY(-50%);
+}
+
+.banner::before {
+  left: 25px;
+  background: url("../img/ico_leftarrow.png")no-repeat center/contain;
+}
+
+.banner::after {
+  right: -65px;
+  background: url("../img/ico_rightarrow.png")no-repeat center/contain;
+}
+
+.banner .banner-lft {
+  float: left;
+
+  padding-top: 46px;
+  padding-left: 100px;
+  max-width: 442px;
+}
+
+.banner .banner-lft h2 {
+  line-height: 1.1;
+  margin-bottom: 21px;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.banner .banner-lft p {
+  line-height: 1.16;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.banner .banner-lft a {
+  position: relative;
+  width: 172px;
+  padding: 13px 0px 13px 27px;
+  border: 1px solid #0795fd;
+  background-color: transparent;
+  color: #0795FD;
+  font-family: Georgia, serif;
+  font-size: 13px;
+  border-radius: 10px;
+}
+
+.banner .banner-lft a::after {
+  position: absolute;
+  top: 50%;
+  right: 33px;
+  width: 7px;
+  height: 13px;
+  background: url("../img/ico_arrow.svg")no-repeat center/contain;
+  content: "";
+  transform: translateY(-50%);
+}
+
+.banner .banner-lft a:hover {
+  background-color: #0795FD;
+  color: #ffffff;
+}
+
+.banner .banner-lft a:hover:after {
+  filter: invert(100%) sepia(99%) saturate(843%) hue-rotate(196deg) brightness(190%) contrast(92%);
+}
+
+.banner .banner-rht {
+  position: relative;
+  float: right;
+  max-width: 400px;
+}
+
+.content {
+  padding-top: 52px;
+  background-color: #434343;
+}
+
+.content h2 {
+  position: relative;
+  margin-bottom: 50px;
+  font-family: Georgia, serif;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.content h2::before {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  content: "";
+  transform: translateY(-50%);
+}
+
+.content h2 span {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  padding: 8px 22px;
+  background-color: #ffffff;
+  color: #000000;
+  letter-spacing: 0.1px;
+  border-radius: 10px;
+}
+
+.content .service-list li {
+  float: left;
+  width: 23.5%;
+  line-height: 1.1;
+  margin: 0 2% 50px 0;
+  background-color: #ffffff;
+}
+
+.content .service-list li a {
+  padding: 26px 16px 20px;
+}
+
+.content .service-list li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.content .service-list li:hover {
+  background-color: #0795FD;
+}
+
+.content .service-list li:hover .service-ttl,
+.content .service-list li:hover .service-txt {
+  color: #ffffff;
+}
+
+.content .service-list li .service-img {
+  margin: 0 auto;
+  max-width: 120px;
+}
+
+.content .service-list li h3 {
+  margin: 8px 0 27px;
+  padding: 0 20px;
+  color: #1E1E1E;
+  font-size: 25px;
+  text-align: center;
+
+}
+
+.content .service-list li p {
+  color: #919090;
+  font-size: 15px;
+  text-align: center;
+}
+
+.content .work-list {
+  padding-left: 5px;
+}
+
+.content .work-list li {
+  position: relative;
+  float: left;
+  width: 31.1%;
+  margin: 0 30px 37px 0;
+  border: 5px solid #ffffff;
+}
+
+.content .work-list li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.content .work-list li .work-ttl {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 5px 0;
+  background-color: #282828;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+footer {
+  padding: 53px 0;
+  background-color: #2F2F2F;
+}
+
+footer .site-info .links-list,
+footer .site-info .tweets,
+footer .site-info .contact {
+  float: left;
+  width: 31%;
+}
+
+footer .site-info .links-list {
+  margin-right: 4.2%;
+}
+
+footer .site-info .tweets {
+  margin-right: 2.7%;
+}
+
+footer .site-info h4 {
+  margin-bottom: 18px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+footer .site-info .links-list ul {
+  padding-left: 13px;
+
+}
+
+footer .site-info .links-list li {
+  width: 96%;
+  padding: 11px 0 10px 13px;
+  border-bottom: 1px solid #000000;
+}
+
+footer .site-info .links-list li:last-child {
+  border-bottom: none;
+}
+
+footer .site-info .links-list li a {
+  position: relative;
+
+  color: #0795FD;
+  font-size: 15px;
+}
+
+footer .site-info .links-list li a::before {
+  position: absolute;
+  top: -3px;
+  left: -26px;
+  width: 8px;
+  height: 17px;
+  background: url("../img/ico_linkarrow.png")no-repeat center/contain;
+  content: "";
+}
+
+footer .site-info .tweets p {
+  line-height: 1.18;
+  font-size: 15px;
+  max-width: 259px;
+}
+
+footer .site-info .tweets p.txt {
+  margin-top: 47px;
+}
+
+footer .site-info .tweets p span {
+  color: #0795FD;
+}
+
+footer .site-info .tweets .update {
+  color: #BDBDBD;
+  font-size: 15px;
+}
+
+footer .site-info .contact input[type=text] {
+  margin-bottom: 10px;
+  padding: 10px 15px 9px;
+
+}
+
+footer .site-info .contact input[type=text],
+footer .site-info .contact textarea {
+  width: 100%;
+  border: none;
+  background-color: #171717;
+  color: #ffffff;
+  font-family: 'Times New Roman', serif;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+footer .site-info .contact input[type=text]::placeholder,
+footer .site-info .contact textarea::placeholder {
+  color: #ffffff;
+}
+
+footer .site-info .contact textarea {
+  margin-bottom: 20px;
+  padding: 4px 16px;
+  resize: none;
+}
+
+footer .site-info .contact input[type=button] {
+  width: 173px;
+  padding: 13px 10px;
+  border: 1px solid transparent;
+  background-color: #0795FD;
+  color: #ffffff;
+  font-family: 'Georgia', serif;
+  font-size: 13px;
+  letter-spacing: 0px;
+  border-radius: 10px;
+}
+
+footer .site-info .contact input[type=button]:hover {
+  background-color: transparent;
+  color: #0795FD;
+  cursor: pointer;
+  border-color: #0795FD;
+}
