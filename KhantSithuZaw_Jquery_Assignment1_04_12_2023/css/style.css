@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  font-size: 24px;
+}
+
+img {
+  width: 100%;
+}
+
+.toggletxt {
+  max-width: 500px;
+}
+
+.togglecolor {
+  color: #a02525;
+}
+
+.toggle {
+  color: #252da0;
+}
+
+.flash {
+  display: none;
+}
+
+.panel,
+.flip {
+  padding: 5px;
+  border: solid 1px #c3c3c3;
+  background-color: #e5eecc;
+  text-align: center;
+}
+
+.panel {
+  display: none;
+  padding: 50px;
+}
+
+.btntoggle {
+  margin: 5px 0;
+  padding: 25px 0;
+  text-align: center;
+}
+
+.btnchange {
+  margin: 10px;
+  color: #25a069;
+  font-size: 25px;
+}
+
+.img-container {
+  margin: 10px;
+  max-width: 300px;
+}
+
+.content {
+  padding: 20px;
+  border: 1px solid red;
+}
+
+.content .box {
+  float: left;
+  width: 20%;
+  margin-right: 3px;
+  margin-bottom: 5px;
+  padding: 40px 0;
+  background-color: #25a069;
+  color: #fff;
+  text-align: center;
+}
+
+.animate-obj {
+  position: relative;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background: #98bf21;
+}
