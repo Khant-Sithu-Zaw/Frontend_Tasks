@@ -11,22 +11,34 @@ body {
 }
 
 img {
-  width: 100%;
+  vertical-align: bottom;
+  max-width: 100%;
 }
 
 a {
   display: inline-block;
   color: inherit;
+  transition: 0.8s;
+}
+
+.wrapper,
+.container {
+  margin: 0 auto;
+
+}
+
+.wrapper {
+  max-width: 1920px;
 }
 
 .main-visual {
-  padding: 48px 0 53px;
+  padding: 48px 0 56px;
   background-color: #2F2F2F;
   border-top: 16px solid #0795FD;
 }
 
 .container {
-  margin: 0 auto;
+  width: 96%;
   max-width: 970px;
 }
 
@@ -109,7 +121,7 @@ header nav li a:hover {
 .banner .banner-lft a {
   position: relative;
   width: 172px;
-  padding: 13px 0px 13px 27px;
+  padding: 14px 0px 14px 27px;
   border: 1px solid #0795fd;
   background-color: transparent;
   color: #0795FD;
@@ -145,13 +157,13 @@ header nav li a:hover {
 }
 
 .content {
-  padding-top: 52px;
+  padding: 50px 0 5px;
   background-color: #434343;
 }
 
 .content h2 {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
   font-family: Georgia, serif;
   font-size: 25px;
   font-weight: 400;
@@ -176,7 +188,7 @@ header nav li a:hover {
   display: inline-block;
   position: relative;
   z-index: 2;
-  padding: 8px 22px;
+  padding: 9px 22px;
   background-color: #ffffff;
   color: #000000;
   letter-spacing: 0.1px;
@@ -187,24 +199,24 @@ header nav li a:hover {
   float: left;
   width: 23.5%;
   line-height: 1.1;
-  margin: 0 2% 50px 0;
-  background-color: #ffffff;
+  margin: 0 2% 47px 0;
 }
 
 .content .service-list li a {
-  padding: 26px 16px 20px;
+  padding: 26px 16px 21px;
+  background-color: #ffffff;
 }
 
 .content .service-list li:nth-child(4n) {
   margin-right: 0;
 }
 
-.content .service-list li:hover {
+.content .service-list li a:hover {
   background-color: #0795FD;
 }
 
-.content .service-list li:hover .service-ttl,
-.content .service-list li:hover .service-txt {
+.content .service-list li a:hover .service-ttl,
+.content .service-list li a:hover .service-txt {
   color: #ffffff;
 }
 
@@ -214,12 +226,11 @@ header nav li a:hover {
 }
 
 .content .service-list li h3 {
-  margin: 8px 0 27px;
+  margin: 11px 0 27px;
   padding: 0 20px;
   color: #1E1E1E;
   font-size: 25px;
   text-align: center;
-
 }
 
 .content .service-list li p {
@@ -236,7 +247,7 @@ header nav li a:hover {
   position: relative;
   float: left;
   width: 31.1%;
-  margin: 0 30px 37px 0;
+  margin: 0 30px 40px 0;
   border: 5px solid #ffffff;
 }
 
@@ -257,55 +268,55 @@ header nav li a:hover {
   text-transform: uppercase;
 }
 
-footer {
+.footer {
   padding: 53px 0;
   background-color: #2F2F2F;
 }
 
-footer .site-info .links-list,
-footer .site-info .tweets,
-footer .site-info .contact {
+.footer .site-info .links-list,
+.footer .site-info .tweets,
+.footer .site-info .contact {
   float: left;
   width: 31%;
 }
 
-footer .site-info .links-list {
+.footer .site-info .links-list {
   margin-right: 4.2%;
 }
 
-footer .site-info .tweets {
+.footer .site-info .tweets {
   margin-right: 2.7%;
 }
 
-footer .site-info h4 {
-  margin-bottom: 18px;
+.footer .site-info h4 {
+  margin-bottom: 16px;
   font-size: 18px;
   font-weight: 400;
 }
 
-footer .site-info .links-list ul {
+.footer .site-info .links-list ul {
   padding-left: 13px;
 
 }
 
-footer .site-info .links-list li {
+.footer .site-info .links-list li {
   width: 96%;
   padding: 11px 0 10px 13px;
   border-bottom: 1px solid #000000;
 }
 
-footer .site-info .links-list li:last-child {
+.footer .site-info .links-list li:last-child {
   border-bottom: none;
 }
 
-footer .site-info .links-list li a {
+.footer .site-info .links-list li a {
   position: relative;
 
   color: #0795FD;
   font-size: 15px;
 }
 
-footer .site-info .links-list li a::before {
+.footer .site-info .links-list li a::before {
   position: absolute;
   top: -3px;
   left: -26px;
@@ -315,33 +326,32 @@ footer .site-info .links-list li a::before {
   content: "";
 }
 
-footer .site-info .tweets p {
-  line-height: 1.18;
+.footer .site-info .tweets p {
+  line-height: 1.12;
   font-size: 15px;
   max-width: 259px;
 }
 
-footer .site-info .tweets p.txt {
-  margin-top: 47px;
+.footer .site-info .tweets p.txt {
+  margin-top: 53px;
 }
 
-footer .site-info .tweets p span {
+.footer .site-info .tweets p span {
   color: #0795FD;
 }
 
-footer .site-info .tweets .update {
+.footer .site-info .tweets .update {
   color: #BDBDBD;
   font-size: 15px;
 }
 
-footer .site-info .contact input[type=text] {
-  margin-bottom: 10px;
+.footer .site-info .contact input[type=text] {
+  margin-bottom: 9px;
   padding: 10px 15px 9px;
-
 }
 
-footer .site-info .contact input[type=text],
-footer .site-info .contact textarea {
+.footer .site-info .contact input[type=text],
+.footer .site-info .contact textarea {
   width: 100%;
   border: none;
   background-color: #171717;
@@ -351,18 +361,18 @@ footer .site-info .contact textarea {
   border-radius: 10px;
 }
 
-footer .site-info .contact input[type=text]::placeholder,
-footer .site-info .contact textarea::placeholder {
+.footer .site-info .contact input[type=text]::placeholder,
+.footer .site-info .contact textarea::placeholder {
   color: #ffffff;
 }
 
-footer .site-info .contact textarea {
-  margin-bottom: 20px;
-  padding: 4px 16px;
+.footer .site-info .contact textarea {
+  margin-bottom: 21px;
+  padding: 7px 15px 2px;
   resize: none;
 }
 
-footer .site-info .contact input[type=button] {
+.footer .site-info .contact input[type=submit] {
   width: 173px;
   padding: 13px 10px;
   border: 1px solid transparent;
@@ -371,10 +381,11 @@ footer .site-info .contact input[type=button] {
   font-family: 'Georgia', serif;
   font-size: 13px;
   letter-spacing: 0px;
+  transition: 0.4s;
   border-radius: 10px;
 }
 
-footer .site-info .contact input[type=button]:hover {
+.footer .site-info .contact input[type=submit]:hover {
   background-color: transparent;
   color: #0795FD;
   cursor: pointer;
