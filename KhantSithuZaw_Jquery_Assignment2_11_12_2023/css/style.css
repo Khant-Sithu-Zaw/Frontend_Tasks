@@ -1,0 +1,305 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+/*
+Hamburger Menu Css starts
+*/
+.wrapper-sec {
+  padding: 20px 0;
+  background-color: #e30101;
+}
+
+.container {
+  width: 96%;
+  margin: 0 auto;
+  max-width: 970px;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin-top: 10px;
+  max-width: 196px;
+}
+
+header nav {
+  padding-right: 2px;
+  font-size: 13px;
+  transition: 0.6s;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header nav li {
+  text-transform: uppercase;
+}
+
+header nav li a {
+  display: inline-block;
+  width: 100px;
+  padding: 17px 0;
+  text-align: center;
+  border-radius: 10px;
+}
+
+header nav li a:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+header .menu {
+  display: none;
+  position: relative;
+  background-color: #ffffff;
+}
+
+header .menu.open .bar1 {
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+header .menu.open .bar1,
+header .menu.open .bar3 {
+  top: 50%;
+}
+
+header .menu.open .bar2 {
+  opacity: 0;
+}
+
+header .menu.open .bar3 {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+header .bar1 {
+  top: 10px;
+}
+
+header .bar2 {
+  top: 22px;
+}
+
+header .bar3 {
+  top: 35px;
+}
+
+/*
+Hamburger Menu Css ends
+*/
+/*
+Tab Css starts
+*/
+.tabs {
+  width: 90%;
+  margin: 10px auto;
+  border: 2px solid #4d4949;
+  background-color: #ead5eb;
+  font-size: 24px;
+  border-radius: 10px;
+}
+
+.tabs-nav {
+  overflow: auto;
+  padding: 5px;
+  border-bottom: 2px solid #000000;
+}
+
+.tabs-nav li {
+  float: left;
+  width: 25%;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.tabs-nav li a {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+.tabs-nav li a:hover,
+.tabs-nav li a.active {
+  background-color: #e012eb;
+  color: #ffffff;
+}
+
+.tab-content {
+  padding: 15px;
+}
+
+/*
+Tab Css ends
+*/
+/*
+Accordion Css starts
+*/
+.accordion-container {
+  width: 98%;
+  margin: 10px auto;
+  font-size: 30px;
+}
+
+.accordion-container .accordion-title {
+  position: relative;
+  padding: 20px;
+  border: 2px solid #000000;
+}
+
+.accordion-container .accordion-title::after,
+.accordion-container .accordion-title.open::after {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  width: 0;
+  height: 0;
+  border: 12px solid transparent;
+  content: "";
+  transform: translateY(-50%);
+}
+
+.accordion-container .accordion-title::after {
+  border-top-color: #ffffff;
+}
+
+.accordion-container .accordion-title.open::after {
+  border-top-color: none;
+  border-bottom-color: #ffffff;
+}
+
+.accordion-container .accordion-title:hover,
+.accordion-container .accordion-title:active,
+.accordion-title.open {
+  background-color: #48900a;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.accordion-content {
+  padding: 10px 25px;
+  font-size: 28px;
+}
+
+/*
+Accordion Css ends
+*/
+/*
+Smooth Scroll Css starts
+*/
+#header,
+#content,
+#footer {
+  padding: 10px 10px 700px;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.smooth {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.smooth:hover {
+  color: #d8ee30;
+  text-decoration: underline;
+}
+
+#header {
+  background-color: #603d09;
+}
+
+#section {
+  background-color: #145201;
+}
+
+#footer {
+  background-color: #140664;
+}
+
+/*
+Smooth Scroll Css ends
+*/
+@media screen and (max-width: 768px) {
+
+  .wrapper-sec {
+    padding: 3.906vw 0;
+  }
+
+  .container {
+    max-width:100vw;
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  header h1 {
+    margin-top: 1.302vw;
+    max-width: 25.521vw;
+  }
+
+  header .menu {
+    display: block;
+    width: 51px;
+    height: 50px;
+    cursor: pointer;
+   
+  }
+
+  header .menu-stick {
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    width: 40px;
+    height: 6px;
+    background-color: #000000;
+    transition: 0.5s;
+    border-radius: 5px;
+  }
+
+  header nav {
+    display: block;
+    position: absolute;
+    top: 90px;
+    right: -300px;
+    width: 40%;
+    padding-right: 0;
+    background-color: rgb(182, 175, 175, 0.3);
+    font-size: 3vw;
+  }
+
+  header nav.open {
+    right: 0;
+  }
+
+  header nav ul {
+    justify-content: center;
+    padding: 1.302vw 0;
+  }
+
+  header nav ul li {
+    width: 90%;
+  }
+
+  header nav ul li a {
+    width: 100%;
+  }
+}
