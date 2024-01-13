@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jquery Assignment2 Menu</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <!--<link rel="stylesheet" type="text/css" href="css/slick-theme.css">-->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <h2>Single Item</h2>
+  <div class="single-item slider">
+    <div class="item">
+      <h3>content 1</h3>
+    </div>
+    <div class="item">
+      <h3>content 2</h3>
+    </div>
+    <div class="item">
+      <h3>content 3</h3>
+    </div>
+    <div class="item">
+      <h3>content 4</h3>
+    </div>
+    <div class="item">
+      <h3>content 5</h3>
+    </div>
+    <div class="item">
+      <h3>content 6</h3>
+    </div>
+  </div>
+  <h2>Responsive Silder</h2>
+  <div class="responsive slider">
+    <div class="item">
+      <h3>content 1</h3>
+    </div>
+    <div class="item">
+      <h3>content 2</h3>
+    </div>
+    <div class="item">
+      <h3>content 3</h3>
+    </div>
+    <div class="item">
+      <h3>content 4</h3>
+    </div>
+    <div class="item">
+      <h3>content 5</h3>
+    </div>
+    <div class="item">
+      <h3>content 6</h3>
+    </div>
+  </div>
+  <h2>Variable width</h2>
+  <div class="variable-width slider">
+    <div class="item">
+      <h3>1</h3>
+      <p>content 1<br>first content</p>
+    </div>
+    <div class="item">
+      <h3>2</h3>
+      <p>content 2</p>
+    </div>
+    <div class="item">
+      <h3>3</h3>
+      <p>content 3</p>
+    </div>
+    <div class="item">
+      <h3>4</h3>
+      <p>content<br><br> 4</p>
+    </div>
+    <div class="item">
+      <h3>5</h3>
+      <p>content 5</p>
+    </div>
+    <div class="item">
+      <h3>6</h3>
+      <p>content<br> 6</p>
+    </div>
+  </div>
+  <h2>Data slide attribute embedded in html</h2>
+  <div class="slider data-slide" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+    <div class="item">
+      <h3>1</h3>
+    </div>
+    <div class="item">
+      <h3>2</h3>
+    </div>
+    <div class="item">
+      <h3>3</h3>
+    </div>
+    <div class="item">
+      <h3>4</h3>
+    </div>
+    <div class="item">
+      <h3>5</h3>
+    </div>
+    <div class="item">
+      <h3>6</h3>
+    </div>
+  </div>
+  <h2>Slider Center</h2>
+  <div class="slider center">
+    <div class="item">
+      <h3>1</h3>
+    </div>
+    <div class="item">
+      <h3>2</h3>
+    </div>
+    <div class="item">
+      <h3>3</h3>
+    </div>
+    <div class="item">
+      <h3>4</h3>
+    </div>
+    <div class="item">
+      <h3>5</h3>
+    </div>
+    <div class="item">
+      <h3>6</h3>
+    </div>
+  </div>
+  <h2>Slider Lazy with image</h2>
+  <div class="slider lazy">
+    <div><img alt="image" data-lazy="img/img_masterpiece1.jpg"></div>
+    <div><img alt="image" data-lazy="img/img_masterpiece2.jpg"></div>
+    <div><img alt="image" data-lazy="img/img_masterpiece3.jpg"></div>
+    <div><img alt="image" data-lazy="img/img_masterpiece4.jpg"></div>
+  </div>
+  <h2>Slider fade </h2>
+  <div class="slider fade image">
+    <img alt="image" src="img/img_masterpiece1.jpg">
+    <img alt="image" src="img/img_masterpiece2.jpg">
+    <img alt="image" src="img/img_masterpiece3.jpg">
+    <img alt="image" src="img/img_masterpiece4.jpg">
+  </div>
+  <h2>Add / Remove slider</h2>
+  <div class="add-remove slider">
+    <div class="item">
+      <h3>1</h3>
+    </div>
+  </div>
+  <button class="js-add-slide">Add Item</button>
+  <button class="js-remove-slide">Remove Item</button>
+  <h2>Slider Filter</h2>
+  <div class="filtering slider">
+    <div class="item">
+      <h3>1</h3>
+    </div>
+    <div class="item">
+      <h3>2</h3>
+    </div>
+    <div class="item">
+      <h3>3</h3>
+    </div>
+    <div class="item">
+      <h3>4</h3>
+    </div>
+    <div class="item">
+      <h3>5</h3>
+    </div>
+    <div class="item">
+      <h3>6</h3>
+    </div>
+    <div class="item">
+      <h3>7</h3>
+    </div>
+    <div class="item">
+      <h3>8</h3>
+    </div>
+  </div>
+  <button class="js-filter">Filter Slides</button>
+  <h2>Slide from right to left</h2>
+  <div class="reverse slider" dir="rtl">
+    <div class="item">
+      <h3>content 1</h3>
+    </div>
+    <div class="item">
+      <h3>content 2</h3>
+    </div>
+    <div class="item">
+      <h3>content 3</h3>
+    </div>
+    <div class="item">
+      <h3>content 4</h3>
+    </div>
+    <div class="item">
+      <h3>content 5</h3>
+    </div>
+    <div class="item">
+      <h3>content 6</h3>
+    </div>
+  </div>
+  <script src="js/library/jquery.min.js"></script>
+  <script src="js/library/slick.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+
+</html>
